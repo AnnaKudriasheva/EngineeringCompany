@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* Large desktop */
+@media only screen and (min-width: 767px) {
+    #container {
+        width: 980px;
+        margin: 0 auto;
+    }
+
+    .row {
+        width: 960px !important;
+    }
+    /* header style */
+    #header {
+        padding-top: 25px;
+        display: inline-block;
+    }
+
+    #logo-div {
+        width: 480px;
+        display: inline-block;
+        text-align: left;
+    }
+
+    #logo-img {
+        padding-left: 10px;
+    }
+
+    #search-div {
+        text-align: right;
+        width: 480px;
+        display: inline-block;
+    }
+
+    /* search input style */
+    .inner-addon {
+        position: relative;
+        width: 240px;
+    }
+
+    .inner-addon .glyphicon {
+        position: absolute;
+        padding: 4px 10px;
+        pointer-events: none;
+        color: #d1d1d1;
+    }
+
+    .right-addon input:focus {
+        outline: none !important;
+        border:1px solid #f29700;
+        box-shadow: 0 0 5px #f29700;
+    }
+
+    .right-addon .glyphicon {
+        right: 0;
+    }
+
+    .right-addon input {
+        padding-right: 30px;
+        height: 25px;
+    }
+
+    #search-icon .glyphicon-search {
+        color: #f29700;
+    }
+    /* navigation list style */
+    .nav-bar {
+        padding-top: 25px;
+    }
+
+    li {
+        float: left;
+    }
+
+    .nav-bar ul {
+        list-style-type: none;
+        margin: 0 !important;
+        padding-left: 80px;
+        overflow: hidden;
+        background-color: white;
+        border-top: 1px solid #dbddde;
+    }
+
+    .nav-bar li a {
+        text-decoration: none !important;
+        display: block;
+        color: #3c4148;
+        text-align: center;
+        padding: 15px 20px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav-bar li a:hover {
+        background-color: #f29700;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-bar li a:active {
+        color: white;
+        text-decoration: none;
+    }
+    /* carousel style */
+    .carousel-indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        z-index: 15;
+        width: 60%;
+        padding-left: 30% !important;
+        margin-left: -30%;
+        text-align: center;
+        list-style: none;
+    }
+    .carousel-indicators li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        margin-left: 15px !important;
+        border-radius: 0 !important;
+    }
+    .carousel-indicators .active {
+        width: 10px;
+        height: 10px;
+        margin: 0;  border: none !important;
+        background-color:  #f29700 !important;
+    }
+
+    #engineering-company-carousel {
+        padding: 0 !important;
+    }
+    /* services list style */
+    .services {
+        border-bottom: 1px solid #dbddde;
+    }
+
+    .services ul {
+        list-style-type: none;
+        margin: 0 !important;
+        padding-left: 0;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    .services li {
+        text-align: center;
+        height: 120px !important;
+    }
+
+    .services li a {
+        text-decoration: none !important;
+        text-align: center;
+        display: block;
+        color: #3c4148;
+        padding: 35px 24px;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid white;
+        border-bottom: 1px solid #dbddde;
+    }
+
+    .services li a:hover {
+        background-color: #eeeeee;
+        border-right: 1px solid #dbddde;
+        border-left: 1px solid #dbddde;
+    }
+
+    .services li a img {
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+
+    .services li a p {
+        display: inline-block;
+        text-align: left;
+        padding-left: 15px;
+    }
+    .selected {
+        background-color: #3c4148;
+        color: white !important;
+    }
+}
+
+/* Style for small width */
+@media (min-device-width: 320px) and (max-device-width: 767px){
+    /* header style */
+    #header {
+        display: block !important;
+        text-align: center;
+    }
+
+    #logo-img {
+        width: 90%;
+    }
+
+    #logo-div {
+        width: 100%;
+        display: block;
+        text-align: center !important;
+    }
+    /* search input style */
+    #search-div {
+        padding-top: 40px;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .inner-addon {
+        width: 80%;
+    }
+
+    .right-addon input {
+        height: 70px !important;
+    }
+
+    .inner-addon .glyphicon {
+        padding: 20px 10px;
+        pointer-events: none;
+    }
+
+    .glyphicon-search {
+        font-size: 30px;
+    }
+
+    #search-icon .glyphicon-search:before {
+        padding: 10px 5px 2px 10px;
+    }
+    /* navigation list style */
+    li {
+        float: none;
+    }
+
+    .nav-bar ul{
+        display: block;
+        padding: 5px !important;
+    }
+
+    .nav-bar li a {
+        font-size: 80px;
+        width: 100%;
+    }
+    /* services list style */
+    .services ul {
+        list-style-type: none;
+        margin: 0 !important;
+        padding-left: 0;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    .services li {
+        text-align: center;
+        height: 300px !important;
+    }
+
+    .services li a {
+        text-align: left;
+        color: #3c4148;
+        padding: 5% 10%;
+        font-size: 55px;
+    }
+
+    .services li a img {
+        width: 70px;
+        display: inline-block;
+    }
+
+    .services li a p {
+        display: inline-block;
+        text-align: left;
+        padding-left: 10%;
+    }
+}

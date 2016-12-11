@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.css">
+
+    <script src="vendor/jquery-3.1.1.min.js"></script>
+    <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo-div">
+                <img id="logo-img" src="img/logo.png" alt="Logo">
+            </div>
+            <div id="search-div">
+                <div class="inner-addon right-addon" style="display: inline-block;">
+                    <i class="glyphicon glyphicon-search"></i>
+                    <input type="text" class="form-control">
+                </div>
+                <div id="search-icon" style="display: inline-block;">
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Объекты</a></li>
+                <li><a href="#">Закупки</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div id="engineering-company-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#engineering-company-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#engineering-company-carousel" data-slide-to="1"></li>
+                <li data-target="#engineering-company-carousel" data-slide-to="2"></li>
+                <li data-target="#engineering-company-carousel" data-slide-to="3"></li>
+                <li data-target="#engineering-company-carousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/slider.png" alt="">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="img/slider.png" alt="">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="img/slider.png" alt="">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="img/slider.png" alt="">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="img/slider.png" alt="">
+                    <div class="carousel-caption"></div>
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/services_1.png">
+                        <p>Услуги <br>проектирования</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/services_2.png">
+                        <p>Строительно- <br>монтажные работы</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/services_3.png">
+                        <p>Экспертная <br>деятельность</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/services_4.png">
+                        <p>Техническое <br>обслуживание</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/services_5.png">
+                        <p>Испытательная <br>лаборатория</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('#carousel-example-generic').carousel({
+        interval: 7500,
+        pause: 'hover',
+        wrap: true
+    });
+
+    $('.nav-bar a').click(function(e) {
+        $('.nav-bar a').each(function(e){
+            $(this).removeClass('selected');
+        });
+        $(this).addClass('selected');
+    });
+</script>
+
+</html>
